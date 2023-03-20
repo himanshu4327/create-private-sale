@@ -1,0 +1,9 @@
+type CreatedPrivateSale @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  privateSaleAddress: Bytes! # address
+  createdTime: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

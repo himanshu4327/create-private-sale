@@ -1,0 +1,199 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "privateSaleAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "createdTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "CreatedPrivateSale",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_privateSaleFactoryMaster",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "logoURL",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "website",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct ICreatePrivateSaleV1.BasicDetail",
+        "name": "_basicDetail",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minimumBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maximumBuy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "softCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hardCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICreatePrivateSaleV1.PrivateSale",
+        "name": "_privateSale",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "TGEReleasePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "CycleReleasePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "CycleInMinutes",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ICreatePrivateSaleV1.Vesting",
+        "name": "_vesting",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "facebookURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "twitterURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "githubURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "telegramURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "instagramURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "discordURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "redditURL",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "youtubeVideoURL",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ICreatePrivateSaleV1.Social",
+        "name": "_social",
+        "type": "tuple"
+      },
+      {
+        "internalType": "enum IPrivateSaleBase.SaleType",
+        "name": "_saleType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IPrivateSaleBase.FeeOptions",
+        "name": "_feeOptions",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IPrivateSaleBase.PaymentOptions",
+        "name": "_paymentOptions",
+        "type": "uint8"
+      }
+    ],
+    "name": "create",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "privateSale",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

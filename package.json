@@ -1,0 +1,18 @@
+{
+  "name": "create-private-sale-factory",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ himanshu4327/create-private-sale-factory",
+    "create-local": "graph create --node http://localhost:8020/ himanshu4327/create-private-sale-factory",
+    "remove-local": "graph remove --node http://localhost:8020/ himanshu4327/create-private-sale-factory",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 himanshu4327/create-private-sale-factory",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.42.4",
+    "@graphprotocol/graph-ts": "0.29.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
